@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+		/>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<audio id="audio" src="wow-audio.mp3"></audio>
+		<div class="container">
+			<h1 class="strong-glow">
+				How many times Owen Wilson says "Wow" in this movie:
+			</h1>
+			<h2 class="strong-glow" id="count-el">0</h2>
+
+			<div class="btn-container">
+				<button class="button-glow" id="decrement-btn" onclick="decrement()">
+					Remove a "Wow"
+				</button>
+				<button class="button-glow glow" id="save-btn" onclick="save()">
+					SAVE
+				</button>
+				<button
+					class="button-glow glow"
+					id="increment-btn"
+					onclick="increment()"
+				>
+					WOW
+				</button>
+			</div>
+			<p class="strong-glow" id="save-el">
+				How many times "wow" has been said in this movie section:
+			</p>
+		</div>
+		<div class="total-container">
+			<h3>Total amount of "wow's" in this movie:</h3>
+			<p class="strong-glow" id="total-el">0</p>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
